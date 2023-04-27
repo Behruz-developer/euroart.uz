@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- <script  src="assets/js/scripts.js"></script> -->
+</head>
+
+<body>
+  <nav>
+
+    <div class="menu">
+      <input type="checkbox" id="check">
+      <div class="logo"><a href="#">
+          <img src="assets/img/download.png" alt="">
+        </a></div>
+      <ul>
+        <label class="btn cancel" for="check"><i class="fa fa-close"></i></label>
+
+        <li><a  href="#home" class="lang text" key="home"></a></li>
+        <li><a  href="#about" class="lang text" key="about">About</a></li>
+        <li><a  href="#servises" class="lang text" key="servises">Projects</a></li>
+        <li><a  href="#projects" class="lang text" key="projects">Contact</a></li>
+        <li><a  href="#articles" class="lang text" key="articles">Products</a></li>
+        <li><a  href="#contact" class="lang text" key="contact">Products</a></li>
+        <div class="dropdown">
+          <button id="language-button">UZ</button>
+          <ul id="language-dropdown" class="dropdown-menu">
+              <li><a href="#" data-lang="uz">UZ</a></li>
+              <li><a href="#" data-lang="ru">RU</a></li>
+              <li><a href="#" data-lang="eng">ENG</a></li>
+          </ul>
+      </div>
+      </ul>
+
+      <label for="check" class="btn bars"><i class="fa fa-bars"></i></label>
+
+    </div>
+    </div>
+  </nav>
+
+  <div class="main-carousel" id="home">
+    <div class="carousel">
+      <div class="items">
+        <div class="img_card carousel-image current">
+          <div class="img_text">
+            <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КОМНАТА</h3>
+          </div>
+          <img src="assets/img/20e29b6d96b41654bf700049e8bebb3f.png" alt="" class=" " />
+        </div>
+
+        <div class="img_card carousel-image ">
+          <div class="img_text">
+            <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ОФИСА</h3>
+          </div>
+          <img src="assets/img/344f5b1a564bbd210ab4c30619e8d833.png" alt="" class=" " />
+        </div>
+
+        <div class="img_card carousel-image ">
+          <div class="img_text">
+            <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КВАРТИРЫ</h3>
+          </div>
+          <img src="assets/img/7b5ec236094cb046084712f3c53aafea.jpg" alt="" class=" " />
+        </div>
+      </div> 
+    </div>
+    <div class="buttons">
+      <i class="fa fa-chevron-left fa-3x" id="prevBtn"></i>
+      <i class="fa fa-chevron-right fa-3x" id="nextBtn"></i>
+    </div>
+  </div>
+
+
+  <div class="about_container" id="about" >`
+    <div class="about_card">
+      <h3 class="lang" key="about" ></h3>
+      <p class="lang" key="about-text"></p>
+    </div>
+  </div>
+
+
+  <div id="servises" class="servises">
+    <h2 class="lang" key="servises">НАШИ</h3>
+    <div class="servises_container">
+      <div class="servises_card">
+        <a href="" class="text_img">
+          <img src="assets/img/1.png" alt="">
+          <p class="servises_text">Ремонт фасадов</p>
+        </a>
+      </div>
+      <div class="servises_card">
+        <a href="" class="text_img">
+          <img src="assets/img/2.png" alt="">
+          <p class="servises_text">Ремонт ванной, кухни, санузла</p>
+        </a>
+      </div>
+      <div class="servises_card">
+        <a href="" class="text_img">
+          <img src="assets/img/3.png" alt="">
+          <p class="servises_text">Ремонт коттеджей</p>
+        </a>
+      </div>
+    </div>
+    <div class="servises_container">
+      <div class="servises_card">
+        <a href="" class="text_img">
+          <img src="assets/img/4.png" alt="">
+          <p class="servises_text">Отделка помещеный</p>
+        </a>
+      </div>
+      <div class="servises_card">
+        <a href="" class="text_img">
+          <img src="assets/img/5.png" alt="">
+          <p class="servises_text">Ремонт офиса в Ташкенте</p>
+        </a>
+      </div>
+      <div class="servises_card">
+        <a href="" class="text_img">
+          <img src="assets/img/6.png" alt="">
+          <p class="servises_text">Ремонт квартиры в Ташкенте</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- img  -->
+  <div class="slider">
+    <div class="slide active">
+      <img src="img/019a879264c6f31a1cc5c649996433d4.png" alt="rasm1">
+    </div>
+    <div class="slide">
+      <img src="img/4269d3ae2b17d7b273e4b11bc3a31642.png" alt="rasm2">
+    </div>
+    <div class="slide">
+      <img src="img/be86e80b24717b541728e0a131c37daf.jpg" alt="rasm3">
+    </div>
+
+
+    <div class="btn-container">
+      <span class="btn active"></span>
+      <span class="btn"></span>
+      <span class="btn"></span>
+    </div>
+  </div>
+
+  <div style="height: 900px;"></div>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/select.js"></script>
+</body>
+
+</html>
