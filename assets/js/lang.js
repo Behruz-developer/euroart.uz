@@ -8,7 +8,10 @@ const langData = {
     "articles": "Maqolalar",
     "contact": "Bog'lanish",
     "about-text": "Kompaniyamiz ta'mirlash va pardozlash ishlarini sifatli bajarish bilan shug'ullanadi. Biz kvartiralarni, ofis xonalarini ta'mirlash, shuningdek, fasadlarni bezash va tiklash bo'yicha kompleks xizmatlarni taqdim etamiz. Xodimlar tarkibiga professional dizaynerlar, qurilish mutaxassisliklari xodimlari, tajribali elektrchilar, chilangarlar, ustalar kiradi. Kompaniyamiz ta'mirlash va pardozlash ishlarini sifatli bajarish bilan shug'ullanadi. Biz kvartiralarni, ofis xonalarini ta'mirlash, shuningdek, fasadlarni bezash va tiklash bo'yicha kompleks xizmatlarni taqdim etamiz.",
-    
+    "project1": "Yotoq xonasi. Loyiha №7",
+    "project2": "Yotoq xonasi. Loyiha №7",
+    "project3": "Yotoq xonasi. Loyiha №7",
+    "project4": "Yotoq xonasi. Loyiha №7",
   },
   "ru": {
     "home": "ГЛАВНАЯ",
@@ -18,16 +21,12 @@ const langData = {
     "articles": "СТАТЬИ",
     "contact": "КОНТАКТЫ",
     "about-text": "Наша компания занимается качественным выполнением ремонтных и отделочных работ. Мы предоставляем комплексные услуги по ремонту квартир, офисных помещений, а также по отделке и восстановлению фасадов. В штате работают профессиональные дизайнеры, сотрудники строительных специальностей, опытные электрики, сантехники, разнорабочие. Наша компания занимается качественным выполнением ремонтных и отделочных работ. Мы предоставляем комплексные услуги по ремонту квартир, офисных помещений, а также по отделке и восстановлению фасадов.",
+    "project1": "Спальня комната. Проект №7",
+    "project2": "Спальня комната. Проект №7",
+    "project3": "Спальня комната. Проект №7",
+    "project4": "Спальня комната. Проект №7",
+
   },
-  "eng": {
-    "home": "Home",
-    "about": "About",
-    "servises": "Servises",
-    "projects": "Projects",
-    "articles": "Articles",
-    "contact": "Contact",
-    "about-text": "Our company is engaged in high-quality performance of repair and finishing works. We provide comprehensive services for the repair of apartments, office space, as well as finishing and restoration of facades. The staff includes professional designers, construction specialists, experienced electricians, plumbers, craftsmen. Our company is engaged in high-quality performance of repair and finishing works. We provide comprehensive services for the repair of apartments, office space, as well as finishing and restoration of facades.",
-  }
 };
 
 const langElements = document.querySelectorAll('.lang');
@@ -39,29 +38,21 @@ function changeLanguage(language) {
   });
 }
 
+
+
+// Tilni qayta belgilash
 let selectedLanguage = 'uz';
 langElements.forEach(el => {
   el.textContent = langData[selectedLanguage][el.getAttribute('key')];
 });
 
-const languageButton = document.getElementById('language-button');
-const languageDropdown = document.getElementById('language-dropdown');
-
-languageButton.addEventListener('click', () => {
-  languageDropdown.style.display = languageDropdown.style.display === 'block' ? 'none' : 'block';
+const langButtons = document.querySelectorAll('.lang-button');
+langButtons.forEach(btn => {
+btn.addEventListener('click', () => {
+  changeLanguage(btn.dataset.lang);
+  langButtons.forEach(btn => {
+    btn.classList.remove('active_lang');
+  });
+  btn.classList.add('active_lang');
 });
-
-languageDropdown.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A') {
-    const lang = e.target.dataset.lang;
-    changeLanguage(lang);
-    languageButton.textContent = lang.toUpperCase();
-    languageDropdown.style.display = 'none';
-  }
-});
-
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.dropdown')) {
-    languageDropdown.style.display = 'inline';
-  }
 });

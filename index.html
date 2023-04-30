@@ -19,29 +19,23 @@
     <div class="menu">
       <input type="checkbox" id="check">
       <div class="logo"><a href="#">
-          <img src="assets/img/download.png" alt="">
+        <img src="assets/img/euroartmaster logo 1-svg.png" alt="">
         </a></div>
       <ul>
         <label class="btn cancel" for="check"><i class="fa fa-close"></i></label>
-
-        <li><a  href="#home" class="lang text" key="home"></a></li>
-        <li><a  href="#about" class="lang text" key="about">About</a></li>
-        <li><a  href="#servises" class="lang text" key="servises">Projects</a></li>
-        <li><a  href="#projects" class="lang text" key="projects">Contact</a></li>
-        <li><a  href="#articles" class="lang text" key="articles">Products</a></li>
-        <li><a  href="#contact" class="lang text" key="contact">Products</a></li>
-        <div class="dropdown">
-          <button id="language-button">UZ</button>
-          <ul id="language-dropdown" class="dropdown-menu">
-              <li><a href="#" data-lang="uz">UZ</a></li>
-              <li><a href="#" data-lang="ru">RU</a></li>
-              <li><a href="#" data-lang="eng">ENG</a></li>
-          </ul>
-      </div>
+       
+        <li><a href="#home" class="lang" key="home"></a></li>
+        <li><a href="#about" class="lang" key="about">About</a></li>
+        <li><a href="#servises" class="lang" key="servises">Projects</a></li>
+        <li><a href="#projects" class="lang" key="projects">Contact</a></li>
+        <li><a href="#contact" class="lang" key="contact">Products</a></li>
+        <div class="language_container">
+          <a  class="lang-button active_lang lang_border" data-lang="uz">UZ</a>
+          <a  class="lang-button" data-lang="ru">RU</a>
+        </div>
       </ul>
-
+      
       <label for="check" class="btn bars"><i class="fa fa-bars"></i></label>
-
     </div>
     </div>
   </nav>
@@ -53,21 +47,21 @@
           <div class="img_text">
             <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КОМНАТА</h3>
           </div>
-          <img src="assets/img/20e29b6d96b41654bf700049e8bebb3f.png" alt="" class=" " />
+          <img src="assets/img/room.jpg" alt="" class=" " />
         </div>
 
         <div class="img_card carousel-image ">
           <div class="img_text">
             <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ОФИСА</h3>
           </div>
-          <img src="assets/img/344f5b1a564bbd210ab4c30619e8d833.png" alt="" class=" " />
+          <img src="assets/img/corridor.jpg" alt="" class=" " />
         </div>
 
         <div class="img_card carousel-image ">
           <div class="img_text">
             <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КВАРТИРЫ</h3>
           </div>
-          <img src="assets/img/7b5ec236094cb046084712f3c53aafea.jpg" alt="" class=" " />
+          <img src="assets/img/kitchen.jpg" alt="" class=" " />
         </div>
       </div> 
     </div>
@@ -78,8 +72,8 @@
   </div>
 
 
-  <div class="about_container" id="about" >`
-    <div class="about_card">
+  <div class="about_container"  >`
+    <div class="about_card" id="about">
       <h3 class="lang" key="about" ></h3>
       <p class="lang" key="about-text"></p>
     </div>
@@ -87,7 +81,7 @@
 
 
   <div id="servises" class="servises">
-    <h2 class="lang" key="servises">НАШИ</h3>
+    <h2 class="lang" key="servises"></h3>
     <div class="servises_container">
       <div class="servises_card">
         <a href="" class="text_img">
@@ -133,13 +127,13 @@
 <!-- img  -->
   <div class="slider">
     <div class="slide active">
-      <img src="img/019a879264c6f31a1cc5c649996433d4.png" alt="rasm1">
+      <img src="assets/img/remont1.jpg" alt="rasm1">
     </div>
     <div class="slide">
-      <img src="img/4269d3ae2b17d7b273e4b11bc3a31642.png" alt="rasm2">
+      <img src="assets/img/remont2.png" alt="rasm2">
     </div>
     <div class="slide">
-      <img src="img/be86e80b24717b541728e0a131c37daf.jpg" alt="rasm3">
+      <img src="assets/img/remont3.png" alt="rasm3">
     </div>
 
 
@@ -149,6 +143,68 @@
       <span class="btn"></span>
     </div>
   </div>
+
+  <!-- nash project  -->
+  <div class="project_container" id="projects">
+      <h2 class="lang project_text"  key="projects">наши проекты</h2>
+      <div class="products_container">
+
+        <a href="" class="product_card">
+          <div class="product_img_wrapper">
+            <img class="product_inner-img" src="assets/img/room.jpg" />
+            <div class="product_middle">
+              <div class="product_text lang" key="project1">СВЕТИЛЬНИКИ</div>
+            </div>
+          </div>
+        </a>
+  
+        <a href="" class="product_card">
+          <div class="product_img_wrapper">
+            <img class="product_inner-img" src="assets/img/corridor.jpg" style="height: 100;">
+            <div class="product_middle">
+              <div class="product_text lang" key="project2">СВЕТИЛЬНИКИ</div>
+            </div>
+          </div>
+        </a>
+  
+        <a href="" class="product_card">
+          <div class="product_img_wrapper">
+            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
+            <div class="product_middle">
+              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+            </div>
+          </div>
+        </a>
+        
+        <a href="" class="product_card">
+          <div class="product_img_wrapper">
+            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
+            <div class="product_middle">
+              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+            </div>
+          </div>
+        </a>
+        <a href="" class="product_card">
+          <div class="product_img_wrapper">
+            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
+            <div class="product_middle">
+              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+            </div>
+          </div>
+        </a>
+        <a href="" class="product_card">
+          <div class="product_img_wrapper">
+            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
+            <div class="product_middle">
+              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  
+   </div>
 
   <div style="height: 900px;"></div>
   <script src="assets/js/script.js"></script>

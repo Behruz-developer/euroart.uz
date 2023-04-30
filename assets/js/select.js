@@ -1,32 +1,54 @@
-let select = document.querySelector('select');
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.btn');
+let currentSlide = 1;
 
-select.addEventListener('focus', () => {
-  select.size = 4; 
-  select.classList.add('fadeIn'); 
-  select.classList.remove('fadeOut');
-  select.style.backgroundColor = '#FFF';
+// Qo'l bilan boshqarish uchun Javascript
+var manualNav = function(manual){
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+
+    btns.forEach((btn) => {
+      btn.classList.remove('active');
+    });
+  });
+
+  slides[manual].classList.add('active');
+  btns[manual].classList.add('active');
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    manualNav(i);
+    currentSlide = i;
+  });
 });
 
-select.addEventListener('blur', () => {
-  select.size = 1; 
-  select.classList.add('fadeOut');
-  select.classList.remove('fadeIn');
-  select.style.backgroundColor = '#FFF';
-});
+// Avtomatik o'tish uchun Javascript
+var repeat = function(activeClass){
+  let active = document.getElementsByClassName('active');
+  let i = 1;
 
-select.addEventListener('change', () => {
-  select.size = 1; 
-  select.blur();
-  select.style.backgroundColor = '#FFF';
-});
+  var repeater = () => {
+    setTimeout(function(){
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove('active');
+      });
 
-select.addEventListener('mouseover', () => {
-  if(select.size == 1){
-     select.style.backgroundColor = 'white';
+    slides[i].classList.add('active');
+    btns[i].classList.add('active');
+    i++;
+
+    if(slides.length == i){
+      i = 0;
+    }
+    if(i >= slides.length){
+      return;
+    }
+    repeater();
+  }, 5000);
   }
-});
-select.addEventListener('mouseout', () => {
-  if(select.size == 1){
-     select.style.backgroundColor = '#FFF';
-  }
-});
+  repeater();
+}
+repeat();
+
+  
