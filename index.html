@@ -9,7 +9,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
   <!-- <script  src="assets/js/scripts.js"></script> -->
 </head>
 
@@ -44,24 +44,24 @@
     <div class="carousel">
       <div class="items">
         <div class="img_card carousel-image current">
-          <div class="img_text">
-            <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КОМНАТА</h3>
-          </div>
           <img src="assets/img/room.jpg" alt="" class=" " />
+          <div class="img_text">
+            <h3 class="lang" key="navimage1">ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КОМНАТА</h3>
+          </div>
         </div>
 
         <div class="img_card carousel-image ">
-          <div class="img_text">
-            <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ОФИСА</h3>
-          </div>
           <img src="assets/img/corridor.jpg" alt="" class=" " />
+          <div class="img_text">
+            <h3 class="lang" key="navimage2">ПЕРЕПЛАНИРОВКА И ДИЗАЙН ОФИСА</h3>
+          </div>
         </div>
 
         <div class="img_card carousel-image ">
-          <div class="img_text">
-            <h3>ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КВАРТИРЫ</h3>
-          </div>
           <img src="assets/img/kitchen.jpg" alt="" class=" " />
+          <div class="img_text">
+            <h3 class="lang" key="navimage3">ПЕРЕПЛАНИРОВКА И ДИЗАЙН ИНТЕРЬЕРА КВАРТИРЫ</h3>
+          </div>
         </div>
       </div> 
     </div>
@@ -72,8 +72,8 @@
   </div>
 
 
-  <div class="about_container"  >`
-    <div class="about_card" id="about">
+  <div class="about_container"  id="about">`
+    <div class="about_card" >
       <h3 class="lang" key="about" ></h3>
       <p class="lang" key="about-text"></p>
     </div>
@@ -86,43 +86,42 @@
       <div class="servises_card">
         <a href="" class="text_img">
           <img src="assets/img/1.png" alt="">
-          <p class="servises_text">Ремонт фасадов</p>
+          <p class="servises_text lang" key="servises1">Ремонт фасадов</p>
         </a>
       </div>
       <div class="servises_card">
         <a href="" class="text_img">
           <img src="assets/img/2.png" alt="">
-          <p class="servises_text">Ремонт ванной, кухни, санузла</p>
+          <p class="servises_text lang" key="servises2">Ремонт ванной, кухни, санузла</p>
         </a>
       </div>
       <div class="servises_card">
         <a href="" class="text_img">
           <img src="assets/img/3.png" alt="">
-          <p class="servises_text">Ремонт коттеджей</p>
+          <p class="servises_text lang" key="servises3">Ремонт коттеджей</p>
         </a>
       </div>
-    </div>
-    <div class="servises_container">
       <div class="servises_card">
         <a href="" class="text_img">
           <img src="assets/img/4.png" alt="">
-          <p class="servises_text">Отделка помещеный</p>
+          <p class="servises_text lang" key="servises4">Отделка помещеный</p>
         </a>
       </div>
       <div class="servises_card">
         <a href="" class="text_img">
           <img src="assets/img/5.png" alt="">
-          <p class="servises_text">Ремонт офиса в Ташкенте</p>
+          <p class="servises_text lang" key="servises5">Ремонт офиса в Ташкенте</p>
         </a>
       </div>
       <div class="servises_card">
         <a href="" class="text_img">
           <img src="assets/img/6.png" alt="">
-          <p class="servises_text">Ремонт квартиры в Ташкенте</p>
+          <p class="servises_text lang" key="servises6">Ремонт квартиры в Ташкенте</p>
         </a>
       </div>
     </div>
-  </div>
+    </div>
+  
 
 <!-- img  -->
   <div class="slider">
@@ -147,69 +146,144 @@
   <!-- nash project  -->
   <div class="project_container" id="projects">
       <h2 class="lang project_text"  key="projects">наши проекты</h2>
-      <div class="products_container">
+      <div class="ota_container">
+        <div class="card" onclick="openModal('product1');">
+            <img src="assets/img/room.jpg" alt="Product1 Image1">
+            <div class="card-info">
+                <div class="card-text">Product2 Card </div>
+            </div>
+        </div>
 
-        <a href="" class="product_card">
-          <div class="product_img_wrapper">
-            <img class="product_inner-img" src="assets/img/room.jpg" />
-            <div class="product_middle">
-              <div class="product_text lang" key="project1">СВЕТИЛЬНИКИ</div>
+        <div class="card" onclick="openModal('product2');">
+            <img src="assets/img/kitchen.jpg" alt="Product2 Image1">
+            <div class="card-info">
+                <div class="card-text">Product2 Card </div>
             </div>
-          </div>
-        </a>
-  
-        <a href="" class="product_card">
-          <div class="product_img_wrapper">
-            <img class="product_inner-img" src="assets/img/corridor.jpg" style="height: 100;">
-            <div class="product_middle">
-              <div class="product_text lang" key="project2">СВЕТИЛЬНИКИ</div>
+        </div>
+
+        <div class="card" onclick="openModal('product3');">
+            <img src="assets/img/corridor.jpg" alt="Product3 Image1">
+            <div class="card-info">
+                <div class="card-text">Product2 Card </div>
             </div>
-          </div>
-        </a>
-  
-        <a href="" class="product_card">
-          <div class="product_img_wrapper">
-            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
-            <div class="product_middle">
-              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+        </div>
+
+        <div class="card" onclick="openModal('product2');">
+            <img src="assets/img/kitchen.jpg" alt="Product2 Image1">
+            <div class="card-info">
+                <div class="card-text">Product2 Card </div>
             </div>
-          </div>
-        </a>
-        
-        <a href="" class="product_card">
-          <div class="product_img_wrapper">
-            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
-            <div class="product_middle">
-              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+        </div>
+
+        <div class="card" onclick="openModal('product3');">
+            <img src="assets/img/corridor.jpg" alt="Product3 Image1">
+            <div class="card-info">
+                <div class="card-text">Product2 Card </div>
             </div>
-          </div>
-        </a>
-        <a href="" class="product_card">
-          <div class="product_img_wrapper">
-            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
-            <div class="product_middle">
-              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+        </div>
+
+        <div class="card" onclick="openModal('product1');">
+            <img src="assets/img/room.jpg" alt="Product1 Image1">
+            <div class="card-info">
+                <div class="card-text">Product2 Card </div>
             </div>
-          </div>
-        </a>
-        <a href="" class="product_card">
-          <div class="product_img_wrapper">
-            <img class="product_inner-img" src="assets/img/kitchen.jpg" />
-            <div class="product_middle">
-              <div class="product_text lang" key="project3">СВЕТИЛЬНИКИ</div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeModal();">
+            <img class="modal-content" id="modalImage">
+            <div id="thumbnailContainer">
             </div>
-          </div>
-        </a>
-        
-      </div>
+            <label id="cancelButton" onclick="closeModal();"><i class="fa fa-close"></i></label>
+        </div>
+    </div>
     </div>
   
-   </div>
+   
+  <div class="workin_container">
+    <h2 class="lang" key="workin">BIZ QANDAY ISHLAB CHIQARAMIZ</h2>
+    <div class="workin_card">     
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project1.png" alt="">
+            <p class="workin_text1 lang" key="workin-text1">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text2">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
 
-  <div style="height: 900px;"></div>
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project2.png" alt="">
+            <p class="workin_text1 lang" key="workin-text3">ПРИНИМАЕМ РЕШЕНИЕ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text4">высылаем вам подробное коммерческое предложение,  вы имеете время его обдумать</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project3.png" alt="">
+            <p class="workin_text1 lang" key="workin-text5">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text6">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project4.png" alt="">
+            <p class="workin_text1 lang" key="workin-text7">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text8">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project5.png" alt="">
+            <p class="workin_text1 lang" key="workin-text9">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text10">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project6.png" alt="">
+            <p class="workin_text1 lang" key="workin-text11">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text12">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project7.png" alt="">
+            <p class="workin_text1 lang" key="workin-text13">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text14">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project8.png" alt="">
+            <p class="workin_text1 lang" key="workin-text15">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text16">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+
+        <div class="workin">
+          <div class="workin_image_text">
+            <img src="assets/img/project9.png" alt="">
+            <p class="workin_text1 lang" key="workin-text17">ЗНАКОМИМСЯ</p>
+          </div>
+              <p class="workin_text2 lang" key="workin-text18">организовываем личную встречу для знакомства с вами и обсуждения деталей</p>             
+        </div>
+    </div>
+  </div>
+
+  <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.3486054963096!2d69.33450331542448!3d41.344775979268015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzQxLjIiTiA2OcKwMjAnMTIuMSJF!5e0!3m2!1sru!2s!4v1683139892839!5m2!1sru!2s" width="80%" position="absolute" left="10%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  
+  <!-- <div style="height: 300px;"></div> -->
   <script src="assets/js/script.js"></script>
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/select.js"></script>
+  <script src="assets/js/project.js"></script>
 </body>
 
 </html>
