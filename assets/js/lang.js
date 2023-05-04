@@ -36,6 +36,18 @@ const langData = {
     "workin-text16":"Biz qo'shimcha xizmatlarni taqdim etish zarurati va imkoniyatlarini muhokama qilamiz",
     "workin-text17":"ПОЛУЧАЕМ РЕЗУЛЬТАТ",
     "workin-text18":"tayyor ob'ektni sizga topshirishdan xursandmiz va sizni yaqinlashib kelayotgan uy qurish bilan tabriklaymiz",
+    "time-job": "Ish vaqti",
+    "job-time": "Har kuni soat 9:00 dan 18:00 gacha",
+    "location": "Toshkent, Mirzo Ulug'bek tumani",
+    "netvork": "Ijtimoiy tarmoq sahifalarimiz",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+
     
   },
   "ru": {
@@ -74,6 +86,20 @@ const langData = {
     "workin-text16":"обговариваем необходимость и возможность оказания дополнительных услуг",
     "workin-text17":"ПОЛУЧАЕМ РЕЗУЛЬТАТ",
     "workin-text18":"с радостью сдаем вам готовый объект и поздравляем с предстоящим новосельем",
+    "time-job": "Режим работы",
+    "job-time": "Каждый день с 9:00 до 18:00",
+    "location": "Мирзо-Улугбекский район, Ташкент",
+    "netvork": "Наши страницы в социальных сетях",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+
   },
 };
 
