@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* background-color: #f2f2f3; */
+}
+
+body {
+
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f3;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+nav {
+  width: 100%;
+  padding: 12px 0;
+  background: white;
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 10;
+  overflow-x: hidden;
+  top: 0px;
+  /* box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1,
+             inset -3px -3px 7px #ffffff,
+             inset 3px 3px 5px #ceced1; */
+}
+
+nav .menu {
+  max-width: 1270px;
+  margin: auto;
+  margin-right: 0;
+  margin-left: 156px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu img {
+  width: 170px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  display: inline-flex;
+  padding: 15px 17px;
+  /* box-shadow: -3px -3px 7px #ffffff,
+            3px 3px 5px #ceced1; */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu ul a:hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1; */
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.upper {
+  font-size: 40px;
+  font-weight: 600;
+  color: #31344b;
+}
+
+.lower {
+  font-size: 40px;
+  font-weight: 600;
+  color: #31344b;
+}
+
+.menu ul a:hover {
+  color: red;
+}
+
+nav label.btnn {
+  color: #31344b;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+nav label.cancel {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-weight: 200;
+
+}
+
+#check {
+  display: none;
+}
+
+.active_lang {
+  color: red !important;
+}
+
+.lang-button {
+  cursor: pointer;
+  padding: 5px 20px !important;
+  margin: 0 !important;
+  width: auto !important;
+}
+
+.lang_border {
+  cursor: pointer;
+  border-right: 1px solid black;
+}
+
+.language_container {
+  margin-top: 0px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.servise_card_page_container{
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 60px;
+  padding-top: 100px;
+}
+
+
+.servise_card_page_container h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.servise_card1_page_middle_title{
+  padding-top: 50px;
+  font-size: 20px;
+  color: black;
+  font-family: 'Open Sans', sans-serif ;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+.servise_card2_page_p_text2{
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.servise_card1_page_ul1_li1_text{
+  font-size: 20px;
+  margin-left: 20px;
+  color: black;
+  opacity: 0.95;
+  font-family: 'Open Sans', sans-serif ;
+
+/* margin-top: 50px; */
+}
+.servise_card_page_ul{
+  margin-top: 50px;
+}
+.servise_card3_page_middle_title{
+  font-size: 20px;
+  color: black;
+  font-family: 'Open Sans', sans-serif ;
+  font-weight: 300;
+  opacity: 0.95;
+}
