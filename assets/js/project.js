@@ -3,6 +3,7 @@ const productImages = {
       "assets/img/room.jpg",
       "assets/img/room1.jpg",
       "assets/img/room2.jpeg",
+      
     ],
     product2: [
       "assets/img/kitchen.jpg",
@@ -16,10 +17,11 @@ const productImages = {
     ],
   };
   
-  function openModal(product) {
+  function openModal(product, title) {
     const mainImage = productImages[product][0];
     const thumbnailContainer = document.getElementById("thumbnailContainer");
   
+    document.getElementById("modalTitle").innerText = title;
     document.getElementById("modalImage").src = mainImage;
     thumbnailContainer.innerHTML = "";
   

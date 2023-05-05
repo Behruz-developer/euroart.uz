@@ -129,7 +129,7 @@ nav label.cancel {
 }
 
 .active_lang {
-  color: darkblue !important;
+  color: red !important;
 }
 
 .lang-button {
@@ -345,22 +345,32 @@ nav label.cancel {
 
 }
 
+.container{
+  width: 80%;
+  margin-left: 10%;
+  /* display: inline; */
+}
+@media (max-width:480px) {
+  .container{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 /* about style  */
 
 .about_container {
-
-  padding: 25px 0 0px 0;
-  background-color: #f2f2f3;
-  font-size: 30px;
-  padding-top: 50px;
   width: 100%;
+  padding-top: 30px;
+  background-color: white;
+  padding-bottom: 20px;
 }
+
+
 
 .about_card {
   width: 100%;
-  padding: 10px 150px 30px 150px;
+  padding: 10px 0px 30px 0px;
   background-color: white;
-  /* margin-top: 50px; */
 
 }
 
@@ -394,7 +404,7 @@ nav label.cancel {
 @media (max-width:480px) {
   .about_container {
 
-    padding: 25px 5% 0px 5%;
+    /* padding: 25px 5% 0px 5%; */
     background-color: #f2f2f3;
     font-size: 30px;
     padding-top: 50px;
@@ -416,7 +426,7 @@ nav label.cancel {
 
   .about_container h3 {
     text-align: center;
-    font-size: 21px;
+    font-size: 29px;
     color: rgb(42, 66, 109);
     text-transform: uppercase;
     line-height: 1.2;
@@ -439,15 +449,13 @@ nav label.cancel {
   margin-top: 30px;
   row-gap: 20px;
   flex-wrap: wrap;
-  padding: 0px 150px 50px 150px;
+  /* padding: 0px 150px 50px 150px; */
 }
 
 .servises h2 {
   font-size: 29px;
-  /* font-family: OpenSans; */
   text-align: center;
   color: rgb(42, 66, 109);
-  /* padding-top: 50px; */
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -461,7 +469,9 @@ nav label.cancel {
   margin-left: 10px;
   color: rgb(42, 66, 109);
   font-size: 17px;
-  /* font-family: "OpenSans"; */
+  font-family: "Open Sans" sans-serif;
+  font-weight: 500;
+  text-decoration: none;
 
 }
 
@@ -481,8 +491,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-}
+  text-decoration: none;}
 
 a:active {
   text-decoration: underline;
@@ -500,7 +509,7 @@ a:active {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 0px 50px 0px;
 
   }
 
@@ -594,13 +603,13 @@ a:active {
   flex-direction: row;
   column-gap: 20px;
   row-gap: 20px;
-  padding: 50px 100px 50px 100px;
+  padding: 50px 0px 50px 0px;
   justify-content: center;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 29%;
+  width: 32.222%;
   height: 300px;
   display: block;
   overflow: hidden;
@@ -649,7 +658,7 @@ a:active {
 }
 
 .modal-content {
-  margin: 7% auto;
+  margin: 1% auto;
   display: block;
   width: 80%;
   max-width: 700px;
@@ -672,12 +681,12 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
+  /* margin-top: -100px; */
 }
 
 #cancelButton {
   position: absolute;
-  top: 40px;
+  top: 10px;
   right: 25px;
   /* background-color: rgba(0, 0, 0, 0.9);; */
   color: white;
@@ -702,14 +711,14 @@ a:active {
   .ota_container {
     flex-direction: column;
     column-gap: 20px;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 0px;
 
   }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 350px;
+    height: 290px;
     display: block;
     overflow: hidden;
     text-align: center;
@@ -719,11 +728,11 @@ a:active {
   }
 
   .modal-content {
-    margin: 25% auto;
+    margin: 2% auto;
     display: block;
     width: 80%;
     max-width: 700px;
-    height: 437px;
+    height: 380px;
   }
 
 }
@@ -748,7 +757,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   row-gap: 70px;
-  padding: 50px 150px 50px 150px;
+  padding: 50px 0px 50px 0px;
 }
 
 .workin {
@@ -789,7 +798,11 @@ a:active {
   line-height: 1.2;
   font-size: 18px;
 }
-
+.modal-title{
+padding-top: 50px;
+  color: white;
+  text-align: center;
+}
 @media (max-width:480px) {
   .workin_container {
     width: 100%;
@@ -812,7 +825,7 @@ a:active {
     flex-wrap: wrap;
     flex-direction: column;
     row-gap: 70px;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 0px;
   }
 
   .workin {
@@ -857,13 +870,13 @@ a:active {
 
 .googlemap {
   width: 100%;
-  padding: 100px 150px 0px 150px;
+  padding: 100px 0px 0px 0px;
 }
 
 @media (max-width:480px) {
   .googlemap {
     width: 100%;
-    padding: 50px 50px 0px 50px;
+    padding: 50px 0px 0px 0px;
   }
 }
 
@@ -1029,7 +1042,7 @@ footer {
     margin-top: 50px;
     height: 650px;
     width: 100%;
-    background-color: #191919;
+    background-color: rgb(42, 66, 109);
     display: flex;
     align-items: center;
     justify-content: space-evenly;

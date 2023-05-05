@@ -34,7 +34,7 @@ const langData = {
     "workin-text14":"biz me'moriy rejalar va chizmalarning to'liq spektrini ishlab chiqamiz",
     "workin-text15":"BIZ LOYIHANI QO'LLAB QUVVATLASHAMIZ",
     "workin-text16":"Biz qo'shimcha xizmatlarni taqdim etish zarurati va imkoniyatlarini muhokama qilamiz",
-    "workin-text17":"ПОЛУЧАЕМ РЕЗУЛЬТАТ",
+    "workin-text17":"NATIJANI OLISH",
     "workin-text18":"tayyor ob'ektni sizga topshirishdan xursandmiz va sizni yaqinlashib kelayotgan uy qurish bilan tabriklaymiz",
     "time-job": "Ish vaqti",
     "job-time": "Har kuni soat 9:00 dan 18:00 gacha",
