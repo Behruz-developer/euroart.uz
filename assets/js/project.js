@@ -15,6 +15,21 @@ const productImages = {
       "assets/img/corridor1.jpg",
       "assets/img/corridor2.jpg",
     ],
+    product4: [
+      "assets/img/ofis_card1.jpg",
+      "assets/img/ofis_card2.jpg",
+      "assets/img/ofis_card3.jpg",
+    ],
+    product5: [
+      "assets/img/bathroom_card1.jpg",
+      "assets/img/bathroom_card2.jpeg",
+      "assets/img/bathroom_card3.jpg",
+    ],
+    product6: [
+      "assets/img/fasad_card1.jpg",
+      "assets/img/fasad_card2.jpg",
+      "assets/img/fasad_card3.jpg",
+    ],
   };
   
   function openModal(product, title) {

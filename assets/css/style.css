@@ -362,7 +362,6 @@ nav label.cancel {
   width: 100%;
   padding-top: 30px;
   background-color: white;
-  padding-bottom: 20px;
 }
 
 
@@ -500,7 +499,7 @@ a:active {
 @media (max-width:480px) {
   .servises {
     font-size: 30px;
-    padding-top: 50px;
+    padding-top: 85px;
     width: 100%;
 
   }
